@@ -10,7 +10,6 @@ export async function getContacts(query) {
     // 검색 조건 key에 full 추가
     contacts = matchSorter(contacts, query, { keys: ["first", "last", "full"] });
   }
-  
   return contacts.sort(sortBy("last", "createdAt"));
 }
 

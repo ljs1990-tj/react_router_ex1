@@ -17,7 +17,7 @@ export default function EditContact() {
   const { contact } = useLoaderData();
   const navigate = useNavigate();
   return (
-    <>
+    
     <Form method="post" id="contact-form">      
       <p>    
         <span>Name</span>
@@ -78,6 +78,6 @@ export default function EditContact() {
       </p>    
     </Form>
    
-    </>
+    
   );
 }
